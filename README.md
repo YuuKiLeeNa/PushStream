@@ -1,0 +1,1 @@
+这是一个推流客户端,可以推RTMP和RTSP流,实现了文字、图片、摄像头水印，降噪去除回声,采集端声音同步,录制等功能.This is a streaming client that can push RTMP and RTSP streams, featuring text, image, and camera watermarks, noise reduction and echo cancellation, audio synchronization at the capture end, and recording functionality.
