@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5119C0D6-FE06-4124-AD83-E27C1D3D6CB3}</ProjectGuid>
+    <Keyword>QtVS_v304</Keyword>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">10.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">10.0</WindowsTargetPlatformVersion>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="QtSettings">
+    <QtInstall>6.7.3_msvc2022_64</QtInstall>
+    <QtModules>core;gui;widgets;opengl;openglwidgets</QtModules>
+    <QtBuildConfig>debug</QtBuildConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="QtSettings">
+    <QtInstall>6.7.3_msvc2022_64</QtInstall>
+    <QtModules>core;gui;widgets;opengl;openglwidgets</QtModules>
+    <QtBuildConfig>release</QtBuildConfig>
+  </PropertyGroup>
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)PushStream;$(SolutionDir)Audio;$(SolutionDir)ZLToolKit;$(SolutionDir)include;$(SolutionDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WINSOCK_DEPRECATED_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(SolutionDir)libd;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;libspeexdsp.lib;rnnoise.lib;winmm.lib;d3d9.lib;avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avutil.lib;postproc.lib;swresample.lib;swscale.lib;opencv_alphamat4120d.lib;opencv_aruco4120d.lib;opencv_bgsegm4120d.lib;opencv_bioinspired4120d.lib;opencv_calib3d4120d.lib;opencv_ccalib4120d.lib;opencv_core4120d.lib;opencv_cvv4120d.lib;opencv_datasets4120d.lib;opencv_dnn4120d.lib;opencv_dnn_objdetect4120d.lib;opencv_dnn_superres4120d.lib;opencv_dpm4120d.lib;opencv_face4120d.lib;opencv_features2d4120d.lib;opencv_flann4120d.lib;opencv_freetype4120d.lib;opencv_fuzzy4120d.lib;opencv_gapi4120d.lib;opencv_hfs4120d.lib;opencv_highgui4120d.lib;opencv_imgcodecs4120d.lib;opencv_imgproc4120d.lib;opencv_img_hash4120d.lib;opencv_intensity_transform4120d.lib;opencv_line_descriptor4120d.lib;opencv_mcc4120d.lib;opencv_ml4120d.lib;opencv_objdetect4120d.lib;opencv_optflow4120d.lib;opencv_phase_unwrapping4120d.lib;opencv_photo4120d.lib;opencv_plot4120d.lib;opencv_quality4120d.lib;opencv_rapid4120d.lib;opencv_reg4120d.lib;opencv_rgbd4120d.lib;opencv_saliency4120d.lib;opencv_shape4120d.lib;opencv_signal4120d.lib;opencv_stereo4120d.lib;opencv_stitching4120d.lib;opencv_structured_light4120d.lib;opencv_superres4120d.lib;opencv_surface_matching4120d.lib;opencv_text4120d.lib;opencv_tracking4120d.lib;opencv_video4120d.lib;opencv_videoio4120d.lib;opencv_videostab4120d.lib;opencv_viz4120d.lib;opencv_wechat_qrcode4120d.lib;opencv_xfeatures2d4120d.lib;opencv_ximgproc4120d.lib;opencv_xobjdetect4120d.lib;opencv_xphoto4120d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)PushStream;$(SolutionDir)Audio;$(SolutionDir)ZLToolKit;$(SolutionDir)include;$(SolutionDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;libspeexdsp.lib;rnnoise.lib;winmm.lib;d3d9.lib;avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avutil.lib;postproc.lib;swresample.lib;swscale.lib;opencv_alphamat4120.lib;opencv_aruco4120.lib;opencv_bgsegm4120.lib;opencv_bioinspired4120.lib;opencv_calib3d4120.lib;opencv_ccalib4120.lib;opencv_core4120.lib;opencv_cvv4120.lib;opencv_datasets4120.lib;opencv_dnn4120.lib;opencv_dnn_objdetect4120.lib;opencv_dnn_superres4120.lib;opencv_dpm4120.lib;opencv_face4120.lib;opencv_features2d4120.lib;opencv_flann4120.lib;opencv_freetype4120.lib;opencv_fuzzy4120.lib;opencv_gapi4120.lib;opencv_hfs4120.lib;opencv_highgui4120.lib;opencv_imgcodecs4120.lib;opencv_imgproc4120.lib;opencv_img_hash4120.lib;opencv_intensity_transform4120.lib;opencv_line_descriptor4120.lib;opencv_mcc4120.lib;opencv_ml4120.lib;opencv_objdetect4120.lib;opencv_optflow4120.lib;opencv_phase_unwrapping4120.lib;opencv_photo4120.lib;opencv_plot4120.lib;opencv_quality4120.lib;opencv_rapid4120.lib;opencv_reg4120.lib;opencv_rgbd4120.lib;opencv_saliency4120.lib;opencv_shape4120.lib;opencv_signal4120.lib;opencv_stereo4120.lib;opencv_stitching4120.lib;opencv_structured_light4120.lib;opencv_superres4120.lib;opencv_surface_matching4120.lib;opencv_text4120.lib;opencv_tracking4120.lib;opencv_video4120.lib;opencv_videoio4120.lib;opencv_videostab4120.lib;opencv_viz4120.lib;opencv_wechat_qrcode4120.lib;opencv_xfeatures2d4120.lib;opencv_ximgproc4120.lib;opencv_xobjdetect4120.lib;opencv_xphoto4120.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>false</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <QtRcc Include="testOpenGL.qrc" />
+    <QtMoc Include="testOpenGL.h" />
+    <ClCompile Include="..\Audio\CAudioFrameCast.cpp" />
+    <ClCompile Include="..\Audio\utilfun.cpp" />
+    <ClCompile Include="..\DrawTextImage\GenTextImage.cpp" />
+    <ClCompile Include="..\OpenGLFrameBuff\CalcGLDraw.cpp" />
+    <ClCompile Include="..\OpenGLFrameBuff\GLDrawText.cpp" />
+    <ClCompile Include="..\OpenGLFrameBuff\QtDrawFrameBuffer.cpp" />
+    <ClCompile Include="..\OpenGLFrameBuff\QtResizeDrawFrameBuffer.cpp" />
+    <ClCompile Include="..\PushStream\imageConvert.cpp" />
+    <ClCompile Include="..\PushStream\PicToYuv.cpp" />
+    <ClCompile Include="..\PushStream\QtGLVideoWidget.cpp" />
+    <ClCompile Include="..\PushStream\ResizeGLWidget.cpp" />
+    <ClCompile Include="..\rnnoiseWarp\rnnoiseDenoise.cpp" />
+    <ClCompile Include="..\rnnoiseWarp\rnnoiseHelp.cpp" />
+    <ClCompile Include="..\speexWrap\speexDenoise.cpp" />
+    <ClCompile Include="..\ZLToolKit\Network\Buffer.cpp" />
+    <ClCompile Include="..\ZLToolKit\Network\BufferSock.cpp" />
+    <ClCompile Include="..\ZLToolKit\Network\Server.cpp" />
+    <ClCompile Include="..\ZLToolKit\Network\Session.cpp" />
+    <ClCompile Include="..\ZLToolKit\Network\Socket.cpp" />
+    <ClCompile Include="..\ZLToolKit\Network\sockutil.cpp" />
+    <ClCompile Include="..\ZLToolKit\Network\TcpClient.cpp" />
+    <ClCompile Include="..\ZLToolKit\Network\TcpServer.cpp" />
+    <ClCompile Include="..\ZLToolKit\Network\UdpServer.cpp" />
+    <ClCompile Include="..\ZLToolKit\Poller\EventPoller.cpp" />
+    <ClCompile Include="..\ZLToolKit\Poller\Pipe.cpp" />
+    <ClCompile Include="..\ZLToolKit\Poller\PipeWrap.cpp" />
+    <ClCompile Include="..\ZLToolKit\Poller\SelectWrap.cpp" />
+    <ClCompile Include="..\ZLToolKit\Poller\Timer.cpp" />
+    <ClCompile Include="..\ZLToolKit\Thread\TaskExecutor.cpp" />
+    <ClCompile Include="..\ZLToolKit\Thread\WorkThreadPool.cpp" />
+    <ClCompile Include="..\ZLToolKit\Util\base64.cpp" />
+    <ClCompile Include="..\ZLToolKit\Util\CMD.cpp" />
+    <ClCompile Include="..\ZLToolKit\Util\File.cpp" />
+    <ClCompile Include="..\ZLToolKit\Util\local_time.cpp" />
+    <ClCompile Include="..\ZLToolKit\Util\logger.cpp" />
+    <ClCompile Include="..\ZLToolKit\Util\MD5.cpp" />
+    <ClCompile Include="..\ZLToolKit\Util\mini.cpp" />
+    <ClCompile Include="..\ZLToolKit\Util\NoticeCenter.cpp" />
+    <ClCompile Include="..\ZLToolKit\Util\SHA1.cpp" />
+    <ClCompile Include="..\ZLToolKit\Util\SqlPool.cpp" />
+    <ClCompile Include="..\ZLToolKit\Util\SSLBox.cpp" />
+    <ClCompile Include="..\ZLToolKit\Util\SSLUtil.cpp" />
+    <ClCompile Include="..\ZLToolKit\Util\strptime_win.cpp" />
+    <ClCompile Include="..\ZLToolKit\Util\util.cpp" />
+    <ClCompile Include="..\ZLToolKit\Util\uv_errno.cpp" />
+    <ClCompile Include="..\ZLToolKit\win32\getopt.c" />
+    <ClCompile Include="testOpenGL.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\OpenGLFrameBuff\QtDrawFrameBuffer.h" />
+    <QtMoc Include="..\PushStream\QtGLVideoWidget.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Audio\CAudioFrameCast.h" />
+    <ClInclude Include="..\Audio\utilfun.h" />
+    <ClInclude Include="..\DrawTextImage\GenTextImage.h" />
+    <ClInclude Include="..\OpenGLFrameBuff\CalcGLDraw.h" />
+    <ClInclude Include="..\OpenGLFrameBuff\GLDrawText.h" />
+    <ClInclude Include="..\OpenGLFrameBuff\QtResizeDrawFrameBuffer.h" />
+    <ClInclude Include="..\OpenGLFrameBuff\vmath.h" />
+    <ClInclude Include="..\PushStream\define_type.h" />
+    <ClInclude Include="..\PushStream\imageConvert.h" />
+    <ClInclude Include="..\PushStream\PicToYuv.h" />
+    <ClInclude Include="..\PushStream\qt_define_type.h" />
+    <ClInclude Include="..\PushStream\ResizeGLWidget.h" />
+    <ClInclude Include="..\rnnoiseWarp\rnnoiseDenoise.h" />
+    <ClInclude Include="..\rnnoiseWarp\rnnoiseHelp.h" />
+    <ClInclude Include="..\SourceType\CSourceType.h" />
+    <ClInclude Include="..\SourceType\GetSourceType.h" />
+    <ClInclude Include="..\speexWrap\speexDenoise.h" />
+    <ClInclude Include="..\ZLToolKit\Network\Buffer.h" />
+    <ClInclude Include="..\ZLToolKit\Network\BufferSock.h" />
+    <ClInclude Include="..\ZLToolKit\Network\Server.h" />
+    <ClInclude Include="..\ZLToolKit\Network\Session.h" />
+    <ClInclude Include="..\ZLToolKit\Network\Socket.h" />
+    <ClInclude Include="..\ZLToolKit\Network\sockutil.h" />
+    <ClInclude Include="..\ZLToolKit\Network\TcpClient.h" />
+    <ClInclude Include="..\ZLToolKit\Network\TcpServer.h" />
+    <ClInclude Include="..\ZLToolKit\Network\UdpServer.h" />
+    <ClInclude Include="..\ZLToolKit\Poller\EventPoller.h" />
+    <ClInclude Include="..\ZLToolKit\Poller\Pipe.h" />
+    <ClInclude Include="..\ZLToolKit\Poller\PipeWrap.h" />
+    <ClInclude Include="..\ZLToolKit\Poller\SelectWrap.h" />
+    <ClInclude Include="..\ZLToolKit\Poller\Timer.h" />
+    <ClInclude Include="..\ZLToolKit\Thread\semaphore.h" />
+    <ClInclude Include="..\ZLToolKit\Thread\TaskExecutor.h" />
+    <ClInclude Include="..\ZLToolKit\Thread\TaskQueue.h" />
+    <ClInclude Include="..\ZLToolKit\Thread\threadgroup.h" />
+    <ClInclude Include="..\ZLToolKit\Thread\ThreadPool.h" />
+    <ClInclude Include="..\ZLToolKit\Thread\WorkThreadPool.h" />
+    <ClInclude Include="..\ZLToolKit\Util\base64.h" />
+    <ClInclude Include="..\ZLToolKit\Util\CMD.h" />
+    <ClInclude Include="..\ZLToolKit\Util\File.h" />
+    <ClInclude Include="..\ZLToolKit\Util\function_traits.h" />
+    <ClInclude Include="..\ZLToolKit\Util\List.h" />
+    <ClInclude Include="..\ZLToolKit\Util\local_time.h" />
+    <ClInclude Include="..\ZLToolKit\Util\logger.h" />
+    <ClInclude Include="..\ZLToolKit\Util\MD5.h" />
+    <ClInclude Include="..\ZLToolKit\Util\mini.h" />
+    <ClInclude Include="..\ZLToolKit\Util\NoticeCenter.h" />
+    <ClInclude Include="..\ZLToolKit\Util\onceToken.h" />
+    <ClInclude Include="..\ZLToolKit\Util\ResourcePool.h" />
+    <ClInclude Include="..\ZLToolKit\Util\RingBuffer.h" />
+    <ClInclude Include="..\ZLToolKit\Util\SHA1.h" />
+    <ClInclude Include="..\ZLToolKit\Util\SpeedStatistic.h" />
+    <ClInclude Include="..\ZLToolKit\Util\SqlConnection.h" />
+    <ClInclude Include="..\ZLToolKit\Util\SqlPool.h" />
+    <ClInclude Include="..\ZLToolKit\Util\SSLBox.h" />
+    <ClInclude Include="..\ZLToolKit\Util\SSLUtil.h" />
+    <ClInclude Include="..\ZLToolKit\Util\strptime_win.h" />
+    <ClInclude Include="..\ZLToolKit\Util\TimeTicker.h" />
+    <ClInclude Include="..\ZLToolKit\Util\util.h" />
+    <ClInclude Include="..\ZLToolKit\Util\uv_errno.h" />
+    <ClInclude Include="..\ZLToolKit\win32\getopt.h" />
+    <ClInclude Include="..\ZLToolKit\win32\tailor.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

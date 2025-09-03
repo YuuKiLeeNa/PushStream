@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="pushstream">
+      <UniqueIdentifier>{137269aa-e8a8-4f51-9a1d-b5998e80fa23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ZLToolKit">
+      <UniqueIdentifier>{1e50b519-6277-4254-94e7-44078f3f091c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Audio">
+      <UniqueIdentifier>{d310a5b1-e41d-44e6-9d65-9d25826e4cf7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="encoder">
+      <UniqueIdentifier>{7cc06c52-1cbd-4ed7-a599-740f61df949b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZLToolKit\Network\Buffer.cpp">
+      <Filter>ZLToolKit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZLToolKit\Network\BufferSock.cpp">
+      <Filter>ZLToolKit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZLToolKit\Network\Server.cpp">
+      <Filter>ZLToolKit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZLToolKit\Network\Session.cpp">
+      <Filter>ZLToolKit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZLToolKit\Network\Socket.cpp">
+      <Filter>ZLToolKit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZLToolKit\Network\sockutil.cpp">
+      <Filter>ZLToolKit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZLToolKit\Network\TcpClient.cpp">
+      <Filter>ZLToolKit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZLToolKit\Network\TcpServer.cpp">
+      <Filter>ZLToolKit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZLToolKit\Network\UdpServer.cpp">
+      <Filter>ZLToolKit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZLToolKit\Poller\EventPoller.cpp">
+      <Filter>ZLToolKit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZLToolKit\Poller\Pipe.cpp">
+      <Filter>ZLToolKit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZLToolKit\Poller\PipeWrap.cpp">
+      <Filter>ZLToolKit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZLToolKit\Poller\SelectWrap.cpp">
+      <Filter>ZLToolKit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZLToolKit\Poller\Timer.cpp">
+      <Filter>ZLToolKit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZLToolKit\Thread\TaskExecutor.cpp">
+      <Filter>ZLToolKit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZLToolKit\Thread\WorkThreadPool.cpp">
+      <Filter>ZLToolKit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZLToolKit\Util\base64.cpp">
+      <Filter>ZLToolKit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZLToolKit\Util\CMD.cpp">
+      <Filter>ZLToolKit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZLToolKit\Util\File.cpp">
+      <Filter>ZLToolKit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZLToolKit\Util\local_time.cpp">
+      <Filter>ZLToolKit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZLToolKit\Util\logger.cpp">
+      <Filter>ZLToolKit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZLToolKit\Util\MD5.cpp">
+      <Filter>ZLToolKit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZLToolKit\Util\mini.cpp">
+      <Filter>ZLToolKit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZLToolKit\Util\NoticeCenter.cpp">
+      <Filter>ZLToolKit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZLToolKit\Util\SHA1.cpp">
+      <Filter>ZLToolKit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZLToolKit\Util\SqlPool.cpp">
+      <Filter>ZLToolKit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZLToolKit\Util\SSLBox.cpp">
+      <Filter>ZLToolKit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZLToolKit\Util\SSLUtil.cpp">
+      <Filter>ZLToolKit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZLToolKit\Util\strptime_win.cpp">
+      <Filter>ZLToolKit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZLToolKit\Util\util.cpp">
+      <Filter>ZLToolKit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZLToolKit\Util\uv_errno.cpp">
+      <Filter>ZLToolKit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZLToolKit\win32\getopt.c">
+      <Filter>ZLToolKit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PushStream\some_util_fun.cpp">
+      <Filter>pushstream</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Audio\utilfun.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\encoder\CAudioEncoder.cpp">
+      <Filter>encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\encoder\CAudioFrameCastTs.cpp">
+      <Filter>encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\encoder\CEncode.cpp">
+      <Filter>encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\encoder\CEncodeHelp.cpp">
+      <Filter>encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\encoder\CEncoderOpt.cpp">
+      <Filter>encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\encoder\CFileEncoder.cpp">
+      <Filter>encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\encoder\CMediaOption.cpp">
+      <Filter>encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\encoder\CSelCodec.cpp">
+      <Filter>encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\encoder\CVideoEncoder.cpp">
+      <Filter>encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\encoder\EncodeBase.cpp">
+      <Filter>encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\encoder\utilEncoder.cpp">
+      <Filter>encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Audio\CAudioFrameCast.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PushStream\imageConvert.cpp">
+      <Filter>pushstream</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\PushStream\define_type.h">
+      <Filter>pushstream</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZLToolKit\Network\Buffer.h">
+      <Filter>ZLToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZLToolKit\Network\BufferSock.h">
+      <Filter>ZLToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZLToolKit\Network\Server.h">
+      <Filter>ZLToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZLToolKit\Network\Session.h">
+      <Filter>ZLToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZLToolKit\Network\Socket.h">
+      <Filter>ZLToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZLToolKit\Network\sockutil.h">
+      <Filter>ZLToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZLToolKit\Network\TcpClient.h">
+      <Filter>ZLToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZLToolKit\Network\TcpServer.h">
+      <Filter>ZLToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZLToolKit\Network\UdpServer.h">
+      <Filter>ZLToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZLToolKit\Poller\EventPoller.h">
+      <Filter>ZLToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZLToolKit\Poller\Pipe.h">
+      <Filter>ZLToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZLToolKit\Poller\PipeWrap.h">
+      <Filter>ZLToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZLToolKit\Poller\SelectWrap.h">
+      <Filter>ZLToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZLToolKit\Poller\Timer.h">
+      <Filter>ZLToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZLToolKit\Thread\semaphore.h">
+      <Filter>ZLToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZLToolKit\Thread\TaskExecutor.h">
+      <Filter>ZLToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZLToolKit\Thread\TaskQueue.h">
+      <Filter>ZLToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZLToolKit\Thread\threadgroup.h">
+      <Filter>ZLToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZLToolKit\Thread\ThreadPool.h">
+      <Filter>ZLToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZLToolKit\Thread\WorkThreadPool.h">
+      <Filter>ZLToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZLToolKit\Util\base64.h">
+      <Filter>ZLToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZLToolKit\Util\CMD.h">
+      <Filter>ZLToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZLToolKit\Util\File.h">
+      <Filter>ZLToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZLToolKit\Util\function_traits.h">
+      <Filter>ZLToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZLToolKit\Util\List.h">
+      <Filter>ZLToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZLToolKit\Util\local_time.h">
+      <Filter>ZLToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZLToolKit\Util\logger.h">
+      <Filter>ZLToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZLToolKit\Util\MD5.h">
+      <Filter>ZLToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZLToolKit\Util\mini.h">
+      <Filter>ZLToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZLToolKit\Util\NoticeCenter.h">
+      <Filter>ZLToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZLToolKit\Util\onceToken.h">
+      <Filter>ZLToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZLToolKit\Util\ResourcePool.h">
+      <Filter>ZLToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZLToolKit\Util\RingBuffer.h">
+      <Filter>ZLToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZLToolKit\Util\SHA1.h">
+      <Filter>ZLToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZLToolKit\Util\SpeedStatistic.h">
+      <Filter>ZLToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZLToolKit\Util\SqlConnection.h">
+      <Filter>ZLToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZLToolKit\Util\SqlPool.h">
+      <Filter>ZLToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZLToolKit\Util\SSLBox.h">
+      <Filter>ZLToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZLToolKit\Util\SSLUtil.h">
+      <Filter>ZLToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZLToolKit\Util\strptime_win.h">
+      <Filter>ZLToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZLToolKit\Util\TimeTicker.h">
+      <Filter>ZLToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZLToolKit\Util\util.h">
+      <Filter>ZLToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZLToolKit\Util\uv_errno.h">
+      <Filter>ZLToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZLToolKit\win32\getopt.h">
+      <Filter>ZLToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZLToolKit\win32\tailor.h">
+      <Filter>ZLToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PushStream\some_util_fun.h">
+      <Filter>pushstream</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Audio\utilfun.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\encoder\CAudioEncoder.h">
+      <Filter>encoder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\encoder\CAudioFrameCastTs.h">
+      <Filter>encoder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\encoder\CEncode.h">
+      <Filter>encoder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\encoder\CEncodeHelp.h">
+      <Filter>encoder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\encoder\CEncoderOpt.h">
+      <Filter>encoder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\encoder\CFileEncoder.h">
+      <Filter>encoder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\encoder\CMediaOption.h">
+      <Filter>encoder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\encoder\CSelCodec.h">
+      <Filter>encoder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\encoder\CVideoEncoder.h">
+      <Filter>encoder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\encoder\EncodeBase.h">
+      <Filter>encoder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\encoder\utilEncoder.h">
+      <Filter>encoder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Audio\CAudioFrameCast.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PushStream\imageConvert.h">
+      <Filter>pushstream</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

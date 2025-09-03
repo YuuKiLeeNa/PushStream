@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{fbe9aa58-d0f6-4db4-b9a4-a5cf779377f7}</ProjectGuid>
+    <RootNamespace>testMixerAduio</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)PushStream;$(SolutionDir)Audio;$(SolutionDir)ZLToolKit;$(SolutionDir)filter;$(SolutionDir)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)libd;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SoundTouchDLL.lib;winmm.lib;d3d9.lib;avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avutil.lib;postproc.lib;swresample.lib;swscale.lib;opencv_alphamat480d.lib;opencv_aruco480d.lib;opencv_bgsegm480d.lib;opencv_bioinspired480d.lib;opencv_calib3d480d.lib;opencv_ccalib480d.lib;opencv_core480d.lib;opencv_cvv480d.lib;opencv_datasets480d.lib;opencv_dnn480d.lib;opencv_dnn_objdetect480d.lib;opencv_dnn_superres480d.lib;opencv_dpm480d.lib;opencv_face480d.lib;opencv_features2d480d.lib;opencv_flann480d.lib;opencv_fuzzy480d.lib;opencv_gapi480d.lib;opencv_hfs480d.lib;opencv_highgui480d.lib;opencv_imgcodecs480d.lib;opencv_imgproc480d.lib;opencv_img_hash480d.lib;opencv_intensity_transform480d.lib;opencv_line_descriptor480d.lib;opencv_mcc480d.lib;opencv_ml480d.lib;opencv_objdetect480d.lib;opencv_optflow480d.lib;opencv_phase_unwrapping480d.lib;opencv_photo480d.lib;opencv_plot480d.lib;opencv_quality480d.lib;opencv_rapid480d.lib;opencv_reg480d.lib;opencv_rgbd480d.lib;opencv_saliency480d.lib;opencv_shape480d.lib;opencv_stereo480d.lib;opencv_stitching480d.lib;opencv_structured_light480d.lib;opencv_superres480d.lib;opencv_surface_matching480d.lib;opencv_text480d.lib;opencv_tracking480d.lib;opencv_video480d.lib;opencv_videoio480d.lib;opencv_videostab480d.lib;opencv_wechat_qrcode480d.lib;opencv_xfeatures2d480d.lib;opencv_ximgproc480d.lib;opencv_xobjdetect480d.lib;opencv_xphoto480d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_AMD64_;_WINSOCK_DEPRECATED_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)PushStream;$(SolutionDir)Audio;$(SolutionDir)ZLToolKit;$(SolutionDir)filter;$(SolutionDir)include;$(SolutionDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)libd;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SoundTouchDLL.lib;winmm.lib;d3d9.lib;avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avutil.lib;postproc.lib;swresample.lib;swscale.lib;opencv_alphamat4120d.lib;opencv_aruco4120d.lib;opencv_bgsegm4120d.lib;opencv_bioinspired4120d.lib;opencv_calib3d4120d.lib;opencv_ccalib4120d.lib;opencv_core4120d.lib;opencv_cvv4120d.lib;opencv_datasets4120d.lib;opencv_dnn4120d.lib;opencv_dnn_objdetect4120d.lib;opencv_dnn_superres4120d.lib;opencv_dpm4120d.lib;opencv_face4120d.lib;opencv_features2d4120d.lib;opencv_flann4120d.lib;opencv_freetype4120d.lib;opencv_fuzzy4120d.lib;opencv_gapi4120d.lib;opencv_hfs4120d.lib;opencv_highgui4120d.lib;opencv_imgcodecs4120d.lib;opencv_imgproc4120d.lib;opencv_img_hash4120d.lib;opencv_intensity_transform4120d.lib;opencv_line_descriptor4120d.lib;opencv_mcc4120d.lib;opencv_ml4120d.lib;opencv_objdetect4120d.lib;opencv_optflow4120d.lib;opencv_phase_unwrapping4120d.lib;opencv_photo4120d.lib;opencv_plot4120d.lib;opencv_quality4120d.lib;opencv_rapid4120d.lib;opencv_reg4120d.lib;opencv_rgbd4120d.lib;opencv_saliency4120d.lib;opencv_shape4120d.lib;opencv_signal4120d.lib;opencv_stereo4120d.lib;opencv_stitching4120d.lib;opencv_structured_light4120d.lib;opencv_superres4120d.lib;opencv_surface_matching4120d.lib;opencv_text4120d.lib;opencv_tracking4120d.lib;opencv_video4120d.lib;opencv_videoio4120d.lib;opencv_videostab4120d.lib;opencv_viz4120d.lib;opencv_wechat_qrcode4120d.lib;opencv_xfeatures2d4120d.lib;opencv_ximgproc4120d.lib;opencv_xobjdetect4120d.lib;opencv_xphoto4120d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)PushStream;$(SolutionDir)Audio;$(SolutionDir)ZLToolKit;$(SolutionDir)filter;$(SolutionDir)include;$(SolutionDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>winmm.lib;d3d9.lib;avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avutil.lib;postproc.lib;swresample.lib;swscale.lib;opencv_alphamat4120.lib;opencv_aruco4120.lib;opencv_bgsegm4120.lib;opencv_bioinspired4120.lib;opencv_calib3d4120.lib;opencv_ccalib4120.lib;opencv_core4120.lib;opencv_cvv4120.lib;opencv_datasets4120.lib;opencv_dnn4120.lib;opencv_dnn_objdetect4120.lib;opencv_dnn_superres4120.lib;opencv_dpm4120.lib;opencv_face4120.lib;opencv_features2d4120.lib;opencv_flann4120.lib;opencv_freetype4120.lib;opencv_fuzzy4120.lib;opencv_gapi4120.lib;opencv_hfs4120.lib;opencv_highgui4120.lib;opencv_imgcodecs4120.lib;opencv_imgproc4120.lib;opencv_img_hash4120.lib;opencv_intensity_transform4120.lib;opencv_line_descriptor4120.lib;opencv_mcc4120.lib;opencv_ml4120.lib;opencv_objdetect4120.lib;opencv_optflow4120.lib;opencv_phase_unwrapping4120.lib;opencv_photo4120.lib;opencv_plot4120.lib;opencv_quality4120.lib;opencv_rapid4120.lib;opencv_reg4120.lib;opencv_rgbd4120.lib;opencv_saliency4120.lib;opencv_shape4120.lib;opencv_signal4120.lib;opencv_stereo4120.lib;opencv_stitching4120.lib;opencv_structured_light4120.lib;opencv_superres4120.lib;opencv_surface_matching4120.lib;opencv_text4120.lib;opencv_tracking4120.lib;opencv_video4120.lib;opencv_videoio4120.lib;opencv_videostab4120.lib;opencv_viz4120.lib;opencv_wechat_qrcode4120.lib;opencv_xfeatures2d4120.lib;opencv_ximgproc4120.lib;opencv_xobjdetect4120.lib;opencv_xphoto4120.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Audio\AudioPeakMagnitudeCalc.cpp" />
+    <ClCompile Include="..\Audio\CAudioFrameCast.cpp" />
+    <ClCompile Include="..\Audio\noise_suppression.c" />
+    <ClCompile Include="..\Audio\obs-audio-controls.cpp" />
+    <ClCompile Include="..\Audio\platform.cpp" />
+    <ClCompile Include="..\Audio\utilfun.cpp" />
+    <ClCompile Include="..\filter\AudioMixer.cpp" />
+    <ClCompile Include="..\filter\Filter.cpp" />
+    <ClCompile Include="..\filter\FilterBase.cpp" />
+    <ClCompile Include="..\filter\MixerBase.cpp" />
+    <ClCompile Include="..\ZLToolKit\Network\Buffer.cpp" />
+    <ClCompile Include="..\ZLToolKit\Network\BufferSock.cpp" />
+    <ClCompile Include="..\ZLToolKit\Network\Server.cpp" />
+    <ClCompile Include="..\ZLToolKit\Network\Session.cpp" />
+    <ClCompile Include="..\ZLToolKit\Network\Socket.cpp" />
+    <ClCompile Include="..\ZLToolKit\Network\sockutil.cpp" />
+    <ClCompile Include="..\ZLToolKit\Network\TcpClient.cpp" />
+    <ClCompile Include="..\ZLToolKit\Network\TcpServer.cpp" />
+    <ClCompile Include="..\ZLToolKit\Network\UdpServer.cpp" />
+    <ClCompile Include="..\ZLToolKit\Poller\EventPoller.cpp" />
+    <ClCompile Include="..\ZLToolKit\Poller\Pipe.cpp" />
+    <ClCompile Include="..\ZLToolKit\Poller\PipeWrap.cpp" />
+    <ClCompile Include="..\ZLToolKit\Poller\SelectWrap.cpp" />
+    <ClCompile Include="..\ZLToolKit\Poller\Timer.cpp" />
+    <ClCompile Include="..\ZLToolKit\Thread\TaskExecutor.cpp" />
+    <ClCompile Include="..\ZLToolKit\Thread\WorkThreadPool.cpp" />
+    <ClCompile Include="..\ZLToolKit\Util\base64.cpp" />
+    <ClCompile Include="..\ZLToolKit\Util\CMD.cpp" />
+    <ClCompile Include="..\ZLToolKit\Util\File.cpp" />
+    <ClCompile Include="..\ZLToolKit\Util\local_time.cpp" />
+    <ClCompile Include="..\ZLToolKit\Util\logger.cpp" />
+    <ClCompile Include="..\ZLToolKit\Util\MD5.cpp" />
+    <ClCompile Include="..\ZLToolKit\Util\mini.cpp" />
+    <ClCompile Include="..\ZLToolKit\Util\NoticeCenter.cpp" />
+    <ClCompile Include="..\ZLToolKit\Util\SHA1.cpp" />
+    <ClCompile Include="..\ZLToolKit\Util\SqlPool.cpp" />
+    <ClCompile Include="..\ZLToolKit\Util\SSLBox.cpp" />
+    <ClCompile Include="..\ZLToolKit\Util\SSLUtil.cpp" />
+    <ClCompile Include="..\ZLToolKit\Util\strptime_win.cpp" />
+    <ClCompile Include="..\ZLToolKit\Util\util.cpp" />
+    <ClCompile Include="..\ZLToolKit\Util\uv_errno.cpp" />
+    <ClCompile Include="..\ZLToolKit\win32\getopt.c" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Audio\audio-io.h" />
+    <ClInclude Include="..\Audio\audio-math.h" />
+    <ClInclude Include="..\Audio\AudioPeakMagnitudeCalc.h" />
+    <ClInclude Include="..\Audio\CAudioFrameCast.h" />
+    <ClInclude Include="..\Audio\ComPtr.hpp" />
+    <ClInclude Include="..\Audio\CoTaskMemPtr.hpp" />
+    <ClInclude Include="..\Audio\CRingBuffer.h" />
+    <ClInclude Include="..\Audio\CSource.h" />
+    <ClInclude Include="..\Audio\CWasapi.h" />
+    <ClInclude Include="..\Audio\media-io-defs.h" />
+    <ClInclude Include="..\Audio\noise_suppression.h" />
+    <ClInclude Include="..\Audio\obs-audio-controls.h" />
+    <ClInclude Include="..\Audio\obs-internal.h" />
+    <ClInclude Include="..\Audio\obs.h" />
+    <ClInclude Include="..\Audio\platform.h" />
+    <ClInclude Include="..\Audio\utilfun.h" />
+    <ClInclude Include="..\Audio\util_uint64.h" />
+    <ClInclude Include="..\Audio\WinHandle.hpp" />
+    <ClInclude Include="..\filter\AudioFilter.h" />
+    <ClInclude Include="..\filter\AudioMixer.h" />
+    <ClInclude Include="..\filter\Filter.h" />
+    <ClInclude Include="..\filter\FilterBase.h" />
+    <ClInclude Include="..\filter\MixerBase.h" />
+    <ClInclude Include="..\PushStream\define_type.h" />
+    <ClInclude Include="..\ZLToolKit\Network\Buffer.h" />
+    <ClInclude Include="..\ZLToolKit\Network\BufferSock.h" />
+    <ClInclude Include="..\ZLToolKit\Network\Server.h" />
+    <ClInclude Include="..\ZLToolKit\Network\Session.h" />
+    <ClInclude Include="..\ZLToolKit\Network\Socket.h" />
+    <ClInclude Include="..\ZLToolKit\Network\sockutil.h" />
+    <ClInclude Include="..\ZLToolKit\Network\TcpClient.h" />
+    <ClInclude Include="..\ZLToolKit\Network\TcpServer.h" />
+    <ClInclude Include="..\ZLToolKit\Network\UdpServer.h" />
+    <ClInclude Include="..\ZLToolKit\Poller\EventPoller.h" />
+    <ClInclude Include="..\ZLToolKit\Poller\Pipe.h" />
+    <ClInclude Include="..\ZLToolKit\Poller\PipeWrap.h" />
+    <ClInclude Include="..\ZLToolKit\Poller\SelectWrap.h" />
+    <ClInclude Include="..\ZLToolKit\Poller\Timer.h" />
+    <ClInclude Include="..\ZLToolKit\Thread\semaphore.h" />
+    <ClInclude Include="..\ZLToolKit\Thread\TaskExecutor.h" />
+    <ClInclude Include="..\ZLToolKit\Thread\TaskQueue.h" />
+    <ClInclude Include="..\ZLToolKit\Thread\threadgroup.h" />
+    <ClInclude Include="..\ZLToolKit\Thread\ThreadPool.h" />
+    <ClInclude Include="..\ZLToolKit\Thread\WorkThreadPool.h" />
+    <ClInclude Include="..\ZLToolKit\Util\base64.h" />
+    <ClInclude Include="..\ZLToolKit\Util\CMD.h" />
+    <ClInclude Include="..\ZLToolKit\Util\File.h" />
+    <ClInclude Include="..\ZLToolKit\Util\function_traits.h" />
+    <ClInclude Include="..\ZLToolKit\Util\List.h" />
+    <ClInclude Include="..\ZLToolKit\Util\local_time.h" />
+    <ClInclude Include="..\ZLToolKit\Util\logger.h" />
+    <ClInclude Include="..\ZLToolKit\Util\MD5.h" />
+    <ClInclude Include="..\ZLToolKit\Util\mini.h" />
+    <ClInclude Include="..\ZLToolKit\Util\NoticeCenter.h" />
+    <ClInclude Include="..\ZLToolKit\Util\onceToken.h" />
+    <ClInclude Include="..\ZLToolKit\Util\ResourcePool.h" />
+    <ClInclude Include="..\ZLToolKit\Util\RingBuffer.h" />
+    <ClInclude Include="..\ZLToolKit\Util\SHA1.h" />
+    <ClInclude Include="..\ZLToolKit\Util\SpeedStatistic.h" />
+    <ClInclude Include="..\ZLToolKit\Util\SqlConnection.h" />
+    <ClInclude Include="..\ZLToolKit\Util\SqlPool.h" />
+    <ClInclude Include="..\ZLToolKit\Util\SSLBox.h" />
+    <ClInclude Include="..\ZLToolKit\Util\SSLUtil.h" />
+    <ClInclude Include="..\ZLToolKit\Util\strptime_win.h" />
+    <ClInclude Include="..\ZLToolKit\Util\TimeTicker.h" />
+    <ClInclude Include="..\ZLToolKit\Util\util.h" />
+    <ClInclude Include="..\ZLToolKit\Util\uv_errno.h" />
+    <ClInclude Include="..\ZLToolKit\win32\getopt.h" />
+    <ClInclude Include="..\ZLToolKit\win32\tailor.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,156 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.Analysis.props(24,5): warning MSB4211: 正在首次将属性“MsvcAnalysisPluginPath”设置为某个值，但已在“C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Microsoft\VC\v170\Microsoft.CodeAnalysis.Extensions.props (33,5)”处使用了该属性。
+cl : 命令行  warning D9035: “Gm”选项已否决，并将在将来的版本中移除
+  smallft.c
+F:\projects\speexdsp-master\libspeexdsp\smallft.c(101,10): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\smallft.c(102,10): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\smallft.c(285,7): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\smallft.c(286,7): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\smallft.c(855,7): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\smallft.c(856,7): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+  scal.c
+F:\projects\speexdsp-master\libspeexdsp\scal.c(109,27): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\scal.c(151,16): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\scal.c(180,18): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\scal.c(182,18): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\scal.c(204,19): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\scal.c(206,25): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\scal.c(208,21): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\scal.c(268,35): warning C4244: “=”: 从“float”转换到“spx_int16_t”，可能丢失数据
+  resample.c
+F:\projects\speexdsp-master\libspeexdsp\resample_sse.h(45,14): warning C4018: “<”: 有符号/无符号不匹配
+  (编译源文件“../../../libspeexdsp/resample.c”)
+  
+F:\projects\speexdsp-master\libspeexdsp\resample_sse.h(62,12): warning C4018: “<”: 有符号/无符号不匹配
+  (编译源文件“../../../libspeexdsp/resample.c”)
+  
+F:\projects\speexdsp-master\libspeexdsp\resample_sse.h(84,14): warning C4018: “<”: 有符号/无符号不匹配
+  (编译源文件“../../../libspeexdsp/resample.c”)
+  
+F:\projects\speexdsp-master\libspeexdsp\resample_sse.h(110,12): warning C4018: “<”: 有符号/无符号不匹配
+  (编译源文件“../../../libspeexdsp/resample.c”)
+  
+F:\projects\speexdsp-master\libspeexdsp\resample.c(297,56): warning C4244: “函数”: 从“double”转换到“float”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\resample.c(297,41): warning C4244: “return”: 从“double”转换到“spx_word16_t”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\resample.c(327,38): warning C4244: “=”: 从“double”转换到“spx_word16_t”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\resample.c(422,40): warning C4244: “=”: 从“double”转换到“spx_word16_t”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\resample.c(542,13): warning C4244: “=”: 从“double”转换到“spx_word32_t”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\resample.c(674,20): warning C4018: “<”: 有符号/无符号不匹配
+F:\projects\speexdsp-master\libspeexdsp\resample.c(949,21): warning C4018: “<”: 有符号/无符号不匹配
+F:\projects\speexdsp-master\libspeexdsp\resample.c(952,20): warning C4018: “<”: 有符号/无符号不匹配
+F:\projects\speexdsp-master\libspeexdsp\resample.c(1004,19): warning C4018: “<”: 有符号/无符号不匹配
+F:\projects\speexdsp-master\libspeexdsp\resample.c(1011,19): warning C4018: “<”: 有符号/无符号不匹配
+F:\projects\speexdsp-master\libspeexdsp\resample.c(1021,16): warning C4018: “<”: 有符号/无符号不匹配
+  preprocess.c
+F:\projects\speexdsp-master\libspeexdsp\math_approx.h(57,21): warning C4244: “return”: 从“double”转换到“spx_word16_t”，可能丢失数据
+  (编译源文件“../../../libspeexdsp/preprocess.c”)
+  
+F:\projects\speexdsp-master\libspeexdsp\math_approx.h(323,15): warning C4244: “=”: 从“double”转换到“spx_word16_t”，可能丢失数据
+  (编译源文件“../../../libspeexdsp/preprocess.c”)
+  
+F:\projects\speexdsp-master\libspeexdsp\preprocess.c(277,13): warning C4244: “=”: 从“double”转换到“spx_word16_t”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\preprocess.c(280,12): warning C4244: “=”: 从“double”转换到“spx_word16_t”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\preprocess.c(361,17): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\preprocess.c(366,29): warning C4244: “return”: 从“double”转换到“spx_word32_t”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\preprocess.c(368,68): warning C4244: “return”: 从“double”转换到“spx_word32_t”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\preprocess.c(382,18): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\preprocess.c(383,17): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\preprocess.c(387,103): warning C4244: “=”: 从“double”转换到“spx_word16_t”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\preprocess.c(442,33): warning C4244: “函数”: 从“int”转换到“spx_word32_t”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\preprocess.c(506,52): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\preprocess.c(512,24): warning C4305: “=”: 从“double”到“float”截断
+F:\projects\speexdsp-master\libspeexdsp\preprocess.c(515,28): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\preprocess.c(516,28): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\preprocess.c(504,43): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\preprocess.c(577,13): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\preprocess.c(583,24): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\preprocess.c(584,44): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\preprocess.c(591,41): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\preprocess.c(740,11): warning C4244: “=”: 从“double”转换到“spx_word16_t”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\preprocess.c(825,43): warning C4244: “函数”: 从“spx_word16_t”转换到“int”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\preprocess.c(864,21): warning C4244: “=”: 从“double”转换到“spx_word16_t”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\preprocess.c(914,75): warning C4244: “=”: 从“double”转换到“spx_word16_t”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\preprocess.c(926,75): warning C4244: “=”: 从“double”转换到“spx_word16_t”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\preprocess.c(967,26): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\preprocess.c(985,26): warning C4244: “=”: 从“spx_word16_t”转换到“spx_int16_t”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\preprocess.c(1077,31): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\preprocess.c(1080,30): warning C4244: “=”: 从“double”转换到“spx_int32_t”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\preprocess.c(1083,31): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\preprocess.c(1086,30): warning C4244: “=”: 从“double”转换到“spx_int32_t”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\preprocess.c(1089,22): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\preprocess.c(1092,30): warning C4244: “=”: 从“double”转换到“spx_int32_t”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\preprocess.c(1135,30): warning C4244: “=”: 从“spx_word16_t”转换到“spx_int32_t”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\preprocess.c(1143,30): warning C4244: “=”: 从“spx_word16_t”转换到“spx_int32_t”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\preprocess.c(1172,30): warning C4244: “=”: 从“double”转换到“spx_int32_t”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\preprocess.c(1175,30): warning C4244: “=”: 从“double”转换到“spx_int32_t”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\preprocess.c(1191,30): warning C4244: “=”: 从“spx_word16_t”转换到“spx_int32_t”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\preprocess.c(1195,24): warning C4244: “=”: 从“spx_int32_t”转换到“float”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\preprocess.c(1202,32): warning C4244: “=”: 从“float”转换到“spx_int32_t”，可能丢失数据
+  mdf.c
+F:\projects\speexdsp-master\libspeexdsp\math_approx.h(57,21): warning C4244: “return”: 从“double”转换到“spx_word16_t”，可能丢失数据
+  (编译源文件“../../../libspeexdsp/mdf.c”)
+  
+F:\projects\speexdsp-master\libspeexdsp\math_approx.h(323,15): warning C4244: “=”: 从“double”转换到“spx_word16_t”，可能丢失数据
+  (编译源文件“../../../libspeexdsp/mdf.c”)
+  
+F:\projects\speexdsp-master\libspeexdsp\mdf.c(194,25): warning C4244: “=”: 从“double”转换到“spx_word16_t”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\mdf.c(362,17): warning C4244: “=”: 从“double”转换到“spx_word16_t”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\mdf.c(473,25): warning C4244: “=”: 从“double”转换到“spx_word16_t”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\mdf.c(483,37): warning C4305: “=”: 从“double”到“spx_word16_t”截断
+F:\projects\speexdsp-master\libspeexdsp\mdf.c(499,33): warning C4305: “=”: 从“double”到“spx_word16_t”截断
+F:\projects\speexdsp-master\libspeexdsp\mdf.c(501,42): warning C4305: “=”: 从“double”到“spx_word16_t”截断
+F:\projects\speexdsp-master\libspeexdsp\mdf.c(503,44): warning C4305: “=”: 从“double”到“spx_word16_t”截断
+F:\projects\speexdsp-master\libspeexdsp\mdf.c(505,44): warning C4305: “=”: 从“double”到“spx_word16_t”截断
+F:\projects\speexdsp-master\libspeexdsp\mdf.c(482,28): warning C4244: “初始化”: 从“double”转换到“spx_word16_t”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\mdf.c(712,10): warning C4244: “=”: 从“double”转换到“spx_word16_t”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\mdf.c(1070,10): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\mdf.c(1115,64): warning C4244: “=”: 从“double”转换到“spx_word16_t”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\mdf.c(1143,19): warning C4244: “=”: 从“double”转换到“spx_word32_t”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\mdf.c(1145,47): warning C4244: “=”: 从“double”转换到“spx_word32_t”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\mdf.c(1161,24): warning C4244: “=”: 从“double”转换到“spx_word32_t”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\mdf.c(1180,46): warning C4244: “=”: 从“int”转换到“spx_word16_t”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\mdf.c(1219,39): warning C4244: “=”: 从“spx_int32_t”转换到“spx_word32_t”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\mdf.c(1242,48): warning C4305: “=”: 从“double”到“spx_word16_t”截断
+F:\projects\speexdsp-master\libspeexdsp\mdf.c(1244,50): warning C4305: “=”: 从“double”到“spx_word16_t”截断
+F:\projects\speexdsp-master\libspeexdsp\mdf.c(1246,50): warning C4305: “=”: 从“double”到“spx_word16_t”截断
+F:\projects\speexdsp-master\libspeexdsp\mdf.c(1270,30): warning C4244: “=”: 从“spx_word32_t”转换到“spx_int32_t”，可能丢失数据
+  kiss_fftr.c
+F:\projects\speexdsp-master\libspeexdsp\math_approx.h(57,21): warning C4244: “return”: 从“double”转换到“spx_word16_t”，可能丢失数据
+  (编译源文件“../../../libspeexdsp/kiss_fftr.c”)
+  
+F:\projects\speexdsp-master\libspeexdsp\math_approx.h(323,15): warning C4244: “=”: 从“double”转换到“spx_word16_t”，可能丢失数据
+  (编译源文件“../../../libspeexdsp/kiss_fftr.c”)
+  
+F:\projects\speexdsp-master\libspeexdsp\kiss_fftr.c(129,25): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\kiss_fftr.c(130,25): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\kiss_fftr.c(131,31): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\kiss_fftr.c(132,31): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+  kiss_fft.c
+F:\projects\speexdsp-master\libspeexdsp\math_approx.h(57,21): warning C4244: “return”: 从“double”转换到“spx_word16_t”，可能丢失数据
+  (编译源文件“../../../libspeexdsp/kiss_fft.c”)
+  
+F:\projects\speexdsp-master\libspeexdsp\math_approx.h(323,15): warning C4244: “=”: 从“double”转换到“spx_word16_t”，可能丢失数据
+  (编译源文件“../../../libspeexdsp/kiss_fft.c”)
+  
+F:\projects\speexdsp-master\libspeexdsp\kiss_fft.c(197,30): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\kiss_fft.c(198,30): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+  jitter.c
+F:\projects\speexdsp-master\libspeexdsp\jitter.c(201,64): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\jitter.c(234,25): warning C4244: “=”: 从“float”转换到“spx_int32_t”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\jitter.c(445,20): warning C4018: “<”: 有符号/无符号不匹配
+F:\projects\speexdsp-master\libspeexdsp\jitter.c(692,20): warning C4018: “<”: 有符号/无符号不匹配
+  filterbank.c
+F:\projects\speexdsp-master\libspeexdsp\math_approx.h(57,21): warning C4244: “return”: 从“double”转换到“spx_word16_t”，可能丢失数据
+  (编译源文件“../../../libspeexdsp/filterbank.c”)
+  
+F:\projects\speexdsp-master\libspeexdsp\math_approx.h(323,15): warning C4244: “=”: 从“double”转换到“spx_word16_t”，可能丢失数据
+  (编译源文件“../../../libspeexdsp/filterbank.c”)
+  
+F:\projects\speexdsp-master\libspeexdsp\filterbank.c(63,14): warning C4244: “=”: 从“double”转换到“spx_word32_t”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\filterbank.c(83,13): warning C4244: “=”: 从“double”转换到“spx_word32_t”，可能丢失数据
+  fftwrap.c
+F:\projects\speexdsp-master\libspeexdsp\fftwrap.c(103,23): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+F:\projects\speexdsp-master\libspeexdsp\fftwrap.c(109,23): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+  buffer.c
+  正在生成代码...
+C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1554,5): warning MSB8012: TargetPath(F:\projects\speexdsp-master\win32\VS2008\libspeexdsp\Debug\libspeexdsp.lib) 与 Library 的 OutputFile 属性值(F:\projects\speexdsp-master\lib\libspeexdsp.lib)不匹配。这可能导致项目生成不正确。若要更正此问题，请确保 $(OutDir)、$(TargetName) 和 $(TargetExt) 属性值与 %(Lib.OutputFile) 中指定的值匹配。
+  libspeexdsp.vcxproj -> F:\projects\speexdsp-master\win32\VS2008\libspeexdsp\Debug\libspeexdsp.lib

@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/PushStream">
+        <file>icon/volume-hover.png</file>
+        <file>icon/volume-normal.png</file>
+        <file>icon/volume-pressed.png</file>
+        <file>icon/volume-shut-hover.png</file>
+        <file>icon/volume-shut-normal.png</file>
+        <file>icon/volume-shut-pressed.png</file>
+        <file>icon/add_hover.png</file>
+        <file>icon/add_normal.png</file>
+        <file>icon/add_pressed.png</file>
+        <file>icon/subtrack_hover.png</file>
+        <file>icon/subtrack_pressed.png</file>
+        <file>icon/subtrack_normal.png</file>
+    </qresource>
+    <qresource prefix="/rnnoise">
+        <file>someResource/rnnoise/weights_blob.bin</file>
+    </qresource>
+</RCC>
